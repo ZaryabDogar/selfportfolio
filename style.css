@@ -1028,28 +1028,48 @@ width: 100vw;
     header{
         width: 100vw;
     }
+	 .content h3{
+        font-size: 2.7rem;
+        
+    }
+    .content h2{
+        font-size: 2.8rem;
+    }
+    .change span{
+        font-size: 1.8rem;
+    }
+    .change h3{
+        
+        font-size: 1.8rem;
+    }
+    .content h1{
+        font-size: 2.8rem;
+    }
+    h2{
+        font-size: 3.2rem;
+    }
 
 }
 @media (max-width:320px)
 {
     .content h3{
-        font-size: 2.7rem;
+        font-size: 2.3rem;
         
     }
     .content h2{
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
     .change span{
-        font-size: 2rem;
+        font-size: 1.7rem;
     }
     .change h3{
         
-        font-size: 2rem;
+        font-size: 1.7rem;
     }
     .content h1{
-        font-size: 3rem;
+        font-size: 2.7rem;
     }
     h2{
-        font-size: 3.5rem;
+        font-size: 3rem;
     }
 }
