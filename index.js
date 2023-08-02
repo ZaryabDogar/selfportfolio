@@ -103,9 +103,12 @@ let navlinks=document.querySelectorAll('header  nav a')
 window.onscroll=()=>{
 sections.forEach(sec=>{
     let top=window.scrollY;
-    let offset=sec.offsetTop-110;
+    let offset=sec.offsetTop-100;
     let height=sec.offsetHeight;
     let id=sec.getAttribute('id')
+    sec.addEventListener("click",()=>{
+        
+    })
     if (top>=offset&&top<offset+height)
     {
         navlinks.forEach(links=>{
@@ -144,7 +147,7 @@ ScrollReveal({
 
 
 });
-ScrollReveal().reveal('.about .content ,.change, .about p ,.heading', { delay: 100,origin:'top' });
-ScrollReveal().reveal('.about .social ,.botton,.services .container,.projectcontainer', { delay:150,origin:'bottom' });
-ScrollReveal().reveal('.about img,.skillright', { delay:100,origin:'right' });
-ScrollReveal().reveal(' .skillleft', { delay:100,origin:'left' });
+ScrollReveal().reveal('.icon1,.icon3 ,.btn ,.change  ,.heading,.about .content', { delay: 100,origin:'top' });
+ScrollReveal().reveal('.icon2,.icon4,.btn1,.services .container,.projectcontainer,.skillright,.skillleft,.about p', { delay:150,origin:'bottom' });
+
+
