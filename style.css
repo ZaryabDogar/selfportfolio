@@ -12,12 +12,11 @@
 html{
     font-size: 62.5%;
     overflow-x: hidden;
-    /* background-color: black; */
-    width: 100vw;
+
     
 }
 body {
-	height: 100%;
+	height: 100vh;
 	width: 100%;
 }
 /* navbar css */
@@ -32,7 +31,9 @@ header{
     align-items: center;
 z-index: 100;
     position: fixed;
+    
 }
+
 #img{
     width:  5rem;
     margin-left: 1rem;
@@ -114,7 +115,8 @@ section{
     color: white;
     padding: 10rem 9% 2rem;
     box-shadow: 4px 0px 10px 100px black;
-    min-width: 100%;
+   /* width: 100vw;  */
+
 
 }
 
@@ -148,6 +150,10 @@ section{
     position: absolute;
     display: flex;
     opacity: 0;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
    
   }
   .change h3 .word .letter{
@@ -164,6 +170,7 @@ section{
   .change h3 .word .letter.behind{
     transform: rotateX(-90deg);
   }
+
  
 h3{
     font-size: 3.2rem;
@@ -349,9 +356,9 @@ h3  span{
     height: 400px;
 }
 .icon1:hover{
-
     transition: 0.5 ease-in;
-    color: black;
+    color: rgb(0, 0, 0);
+    
 }
 .icon2 {
     display: flex;
@@ -536,11 +543,6 @@ h2 span{
 
 }
 
-/* .skillmain  span {
-    color: #38b6ff;
-    font-size: 1.5rem;
-    margin: 1rem 0;
-} */
 .skill p{
     font-size: 1.5rem;
 
@@ -711,7 +713,6 @@ h2 span{
 .circle .points{
      width: 2px;
      height: 10px;
-     /* background-color: #38b6ff; */
      position:absolute;
      border-radius: 3px;
      transform: rotate(calc(var(--i)*var(--rot))) translateY(-45px);
@@ -850,14 +851,11 @@ h2 span{
 @media (max-width:991px) {
     .header{
         padding: .5rem 9%;
-        width: 100vw;
-        
-        
 
-    }
+    } 
     body{
         width: 100%;
-    }
+    } 
     section{
         padding: 10rem 3% 2rem;
     }
@@ -872,6 +870,9 @@ h2 span{
 
 @media (max-width:764px)
 {
+    .header{
+        height: 10%;
+    }
 
      body{
          width: 100%;
@@ -981,25 +982,43 @@ width: 100vw;
 }
 @media (max-width:444px)
 {
+    .header{
+        height: 8%;
+    }
     html{
         font-size: 50%;
     }
     .footer{
-        padding: 1rem 3%;
+        padding: 5rem 3%;
+
+        background-color: #000000;
     }
     .about img{
         width: 50vw;
     }
-    body{
-        width: 100%;
+    .content h3{
+        font-size: 3rem;
+        
     }
+    .content h2{
+        font-size: 3.5rem;
+    }
+    .change span{
+        font-size: 2.5rem;
+    }
+    .change h3{
+        
+        font-size: 2.5rem;
+    }
+    .content h1{
+        font-size: 3rem;
+    }
+
 }
 
 @media (max-width:364px){
 
-    body{
-        width: 100%;
-    }
+
     .footer{
         padding: 1rem 3%;
     }
@@ -1009,7 +1028,28 @@ width: 100vw;
     header{
         width: 100vw;
     }
-    video{
-    display: none;
+
+}
+@media (max-width:320px)
+{
+    .content h3{
+        font-size: 2.7rem;
+        
+    }
+    .content h2{
+        font-size: 3rem;
+    }
+    .change span{
+        font-size: 2rem;
+    }
+    .change h3{
+        
+        font-size: 2rem;
+    }
+    .content h1{
+        font-size: 3rem;
+    }
+    h2{
+        font-size: 3.5rem;
     }
 }
